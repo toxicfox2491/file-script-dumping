@@ -1,8 +1,8 @@
-print('if you see this message send it in the discord servers bug report channel\n exit code : EXP x01t3r')
+print('if you see this message, contact the support channel in the discord IMMEDIATELY! this is a seriously bad bug\nexit code : EXP x01t3r')
 wait(1.0)
 --modded key system
 
-local key = "modzrule"
+local key = "run"
 
 function writeifnil(filename)
     local bool,error = pcall(function() readfile(filename) end)
@@ -59,7 +59,7 @@ function writeifnil(filename)
         local Tab = Window:CreateTab("Key")
         local Section = Tab:CreateSection("Key Resets if the key system gets changed")
         local Input = Tab:CreateInput({
-            Name = "type in \"modzrule\" and press enter",
+            Name = "type in \"run\" and press enter",
             PlaceholderText = "Enter Here",
             RemoveTextAfterFocusLost = true,
             Callback = function(Text)
