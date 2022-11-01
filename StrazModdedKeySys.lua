@@ -1,4 +1,3 @@
---anti local script kick
 local Players = game:GetService("Players")
 local OldNameCall = nil
 
@@ -33,7 +32,6 @@ if getgenv().SendNotifications == true then
 end
 print('if you see this message send it in the discord servers bug report channel\n exit code : EXP x01t3r')
 wait(0.4)
-
 --modded key system
 
 local key = "modzrule"
