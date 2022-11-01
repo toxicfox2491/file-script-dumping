@@ -1,13 +1,8 @@
---// Variables
-
+--anti local script kick
 local Players = game:GetService("Players")
 local OldNameCall = nil
 
---// Global Variables
-
-getgenv().SendNotifications = true -- Set to true if you want to get notified regularly.
-
---// Anti Kick Hook
+getgenv().SendNotifications = false
 
 OldNameCall = hookmetamethod(game, "__namecall", function(Self, ...)
     local NameCallMethod = getnamecallmethod()
@@ -15,8 +10,8 @@ OldNameCall = hookmetamethod(game, "__namecall", function(Self, ...)
     if tostring(string.lower(NameCallMethod)) == "kick" then
         if getgenv().SendNotifications == true then
             game:GetService("StarterGui"):SetCore("SendNotification", {
-                Title = "Exunys Developer",
-                Text = "You almost got kicked! Successfully prevented.",
+                Title = "anti kick",
+                Text = "kick Successfully prevented.",
                 Icon = "rbxassetid://6238540373",
                 Duration = 3,
             })
@@ -36,7 +31,10 @@ if getgenv().SendNotifications == true then
         Duration = 5,
     })
 end
+
 wait(0.4)
+
+--modded key system
 
 local key = "modzrule"
 
@@ -118,7 +116,7 @@ function writeifnil(filename)
                                     [1] = "Respawn"
                                 }
                             }
-                            
+                           
                             game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
                             wait(2)
                             game.Lighting.Blur.Enabled = false
@@ -135,3 +133,10 @@ function writeifnil(filename)
             end,
         })
     end
+--anti afk
+local vu = game:GetService("VirtualUser")
+game:GetService("Players").LocalPlayer.Idled:connect(function()
+vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+wait(1)
+vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+end)
