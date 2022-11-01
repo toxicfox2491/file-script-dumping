@@ -1,35 +1,4 @@
-local Players = game:GetService("Players")
-local OldNameCall = nil
 
-getgenv().SendNotifications = false
-
-OldNameCall = hookmetamethod(game, "__namecall", function(Self, ...)
-    local NameCallMethod = getnamecallmethod()
-
-    if tostring(string.lower(NameCallMethod)) == "kick" then
-        if getgenv().SendNotifications == true then
-            game:GetService("StarterGui"):SetCore("SendNotification", {
-                Title = "anti kick",
-                Text = "kick Successfully prevented.",
-                Icon = "rbxassetid://6238540373",
-                Duration = 3,
-            })
-        end
-        
-        return nil
-    end
-    
-    return OldNameCall(Self, ...)
-end)
-
-if getgenv().SendNotifications == true then
-    game:GetService("StarterGui"):SetCore("SendNotification", {
-        Title = "attempt anti kick",
-        Text = "Anti-Kick script loaded",
-        Icon = "rbxassetid://6238537240",
-        Duration = 5,
-    })
-end
 print('if you see this message send it in the discord servers bug report channel\n exit code : EXP x01t3r')
 wait(0.4)
 --modded key system
@@ -137,3 +106,35 @@ vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
 wait(1)
 vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
 end)
+local Players = game:GetService("Players")
+local OldNameCall = nil
+
+getgenv().SendNotifications = false
+
+OldNameCall = hookmetamethod(game, "__namecall", function(Self, ...)
+    local NameCallMethod = getnamecallmethod()
+
+    if tostring(string.lower(NameCallMethod)) == "kick" then
+        if getgenv().SendNotifications == true then
+            game:GetService("StarterGui"):SetCore("SendNotification", {
+                Title = "anti kick",
+                Text = "kick Successfully prevented.",
+                Icon = "rbxassetid://6238540373",
+                Duration = 3,
+            })
+        end
+        
+        return nil
+    end
+    
+    return OldNameCall(Self, ...)
+end)
+
+if getgenv().SendNotifications == true then
+    game:GetService("StarterGui"):SetCore("SendNotification", {
+        Title = "attempt anti kick",
+        Text = "Anti-Kick script loaded",
+        Icon = "rbxassetid://6238537240",
+        Duration = 5,
+    })
+end
