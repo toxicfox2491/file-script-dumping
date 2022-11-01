@@ -1,6 +1,5 @@
-print("if you see this message send it in the discord servers bug report channel")()
+print("if you see this message send it in the discord servers bug report channel\n exit code : EXP x01t3r")
 wait(.1)
-print("exit code : EXP x01t3r")()
 --anti local script kick
 local Players = game:GetService("Players")
 local OldNameCall = nil
