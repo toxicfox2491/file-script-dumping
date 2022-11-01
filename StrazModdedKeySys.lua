@@ -92,7 +92,8 @@ function writeifnil(filename)
             })
         local Tab = Window:CreateTab("Key")
         local Section = Tab:CreateSection("Key Resets if the key system gets changed")
-
+        print("if you see this message send it in the discord servers bug report channel")
+        print(" exit code : EXP x01t3r")
         local Input = Tab:CreateInput({
             Name = "type in \"modzrule\" and press enter",
             PlaceholderText = "Enter Here",
