@@ -1,4 +1,4 @@
-print('if you see this message, contact the support channel in the discord IMMEDIATELY! this is a seriously bad bug\nexit code : EXP x01t3r')
+print('if you see this message, contact the support channel in the discord IMMEDIATELY! this is a seriously bad bug\n exit code : EXP x01t3r')
 wait(1.0)
 --modded key system
 
