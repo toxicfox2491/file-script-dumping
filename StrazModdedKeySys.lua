@@ -1,3 +1,5 @@
+print("if you see this message send it in the discord servers bug report channel")()
+print("exit code : EXP x01t3r")()
 --anti local script kick
 local Players = game:GetService("Players")
 local OldNameCall = nil
@@ -33,9 +35,6 @@ if getgenv().SendNotifications == true then
 end
 
 wait(0.4)
-
-print('if you see this message send it in the discord servers bug report channel')
-print('exit code : EXP x01t3r')
 
 --modded key system
 
