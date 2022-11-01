@@ -34,8 +34,8 @@ end
 
 wait(0.4)
 
-print("if you see this message send it in the discord servers bug report channel")
-print(" exit code : EXP x01t3r")
+print('if you see this message send it in the discord servers bug report channel')
+print('exit code : EXP x01t3r')
 
 --modded key system
 
