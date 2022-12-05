@@ -46,8 +46,8 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/So
     local Other = Window:NewTab("Other")
     local OtherSection = Other:NewSection("Other")
 
-    OtherSection:NewButton("empty", "empty disc", function()
-        --code here
+    OtherSection:NewButton("AutoClicker", "Auto Clicker Script", function()
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/JustEzpi/ROBLOX-Scripts/main/ROBLOX_AutoClicker"))()
     end)
 
     OtherSection:NewButton("bypassed fly", "nicuse's fly script", function()
@@ -55,3 +55,4 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/So
 
         Fly(true)
     end)
+ print("Stat.save Error Report to #📝origin-bug-reports immediately!!! your stats could be at risk otherwise")
