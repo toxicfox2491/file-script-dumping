@@ -60,8 +60,8 @@ local Window = Library.CreateLib("catboys Util script", "Serpent")
     end)
    
     --Notes
-    local notes = Window:NewTab("Notes")
-    local notesSection = notes:NewSection("Notes")
+    local notes = Window:NewTab("notes")
+    local notesSection = notes:NewSection("notes")
 label:UpdateLabel("New Text"))
 |
    end)
