@@ -1,4 +1,4 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/toxicfox2491/file-script-dumping/main/source/source.lua"))()
 local Window = Library.CreateLib("ToxicFox2491's script", "Synapse")
     -- MAIN
     local Main = Window:NewTab("Main")
