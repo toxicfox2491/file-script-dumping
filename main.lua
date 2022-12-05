@@ -26,6 +26,9 @@ local Window = Library.CreateLib("catboys Util script", "Serpent")
 	Library:ToggleUI()
     end)
 
+    MainSection:NewLabel("Undetectable and safe")
+    MainSection:NewLabel("auto updates every week")
+
     --LOCAL PLAYER
     local Player = Window:NewTab("Player")
     local PlayerSection = Player:NewSection("Player")
