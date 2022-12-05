@@ -3,13 +3,10 @@ local Window = Library.CreateLib("catboys Util script", "Serpent")
     -- MAIN
     local Main = Window:NewTab("Main")
     local MainSection = Main:NewSection("Main")
-
     --button example  
     --MainSection:NewButton("name", "description", function()
     -- [code here]
     --end)
-
-
     MainSection:NewButton("straz hub keyless", "loads straz hub without key sys", function()
     loadstring(game:HttpGet(("https://raw.githubusercontent.com/UnknownStraz/main/main/main%20for"), true))()
     end)
