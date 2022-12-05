@@ -14,8 +14,6 @@ local Window = Library.CreateLib("catboys Util script", "Serpent")
     loadstring(game:HttpGet(("https://raw.githubusercontent.com/UnknownStraz/main/main/main%20for"), true))()
     end)
 
-   
-
     MainSection:NewButton("Infinite Yield", "loads the inf yield script", function()
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
     end)
@@ -58,6 +56,4 @@ local Window = Library.CreateLib("catboys Util script", "Serpent")
 
         Fly(true)
     end)
-end
-
 print("Stat.save Error Report to #📝origin-bug-reports immediately!!! your stats could be at risk otherwise")
