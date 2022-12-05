@@ -77,6 +77,18 @@ local Window = Library.CreateLib("catboys Util script", "Serpent")
         Fly(true)
     end)
 
+    OtherSection:NewToggle("No Render", "ToggleInfo", function(state)
+       if state then
+           function(args, speaker)
+	   RunService:Set3dRenderingEnabled(false)
+           end
+       else
+        function(args, speaker)
+	RunService:Set3dRenderingEnabled(true)
+        end
+    end)
+
+    --notes
     local Notes = Window:NewTab("Notes")
     local NotesSection = Notes:NewSection("Notes")
 
