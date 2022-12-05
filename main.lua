@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/toxicfox2491/file-script-dumping/main/source/source.lua"))()
-local Window = Library.CreateLib("a catboys Util script", "Midnight")
+local Window = Library.CreateLib("a catboys Util script", "Synapse")
     -- MAIN
     local Main = Window:NewTab("Main")
     local MainSection = Main:NewSection("Main")
