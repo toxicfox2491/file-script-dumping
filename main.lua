@@ -6,16 +6,14 @@ local Window = Library.CreateLib("ToxicFox2491's script", "Synapse")
 
 
     MainSection:NewButton("straz hub keyless", "loads straz hub without key sys", function()
-        loadstring(game:HttpGet('https://pastebin.com/raw/7wDcPtLk'))()
+       loadstring(game:HttpGet(("https://raw.githubusercontent.com/UnknownStraz/main/main/main%20for"), true))()
     end)
 
-    MainSection:NewToggle("Super-Human", "go fast and jump high", function(state)
+    MainSection:NewToggle("toggle", "toggle", function(state)
         if state then
-            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 120
-            game.Players.LocalPlayer.Character.Humanoid.JumpPower = 120
+    --on code
         else
-            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
-            game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+    --off code
         end
     end)
 
