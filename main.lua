@@ -7,7 +7,7 @@ local Window = Library.CreateLib("catboys Util script", "Serpent")
     --MainSection:NewButton("name", "description", function()
     -- [code here]
     --end)
-    MainSection:NewButton("straz hub keyless", "loads straz hub without key sys", function()
+    MainSection:NewButton("straz hub keyless (move this GUI first)", "loads straz hub without key sys", function()
     loadstring(game:HttpGet(("https://raw.githubusercontent.com/UnknownStraz/main/main/main%20for"), true))()
     end)
 
