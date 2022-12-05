@@ -24,7 +24,7 @@ local Window = Library.CreateLib("a catboys Util script", "Midnight")
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
     end)
 
-    MainSection:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.E, function()
+    MainSection:NewKeybind("Toggle UI", "UI toggle key", Enum.KeyCode.E, function()
 	Library:ToggleUI()
     end)
 
