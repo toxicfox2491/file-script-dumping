@@ -78,37 +78,9 @@ local Window = Library.CreateLib("catboys Util script", "Serpent")
     end)
 
     OtherSection:NewToggle("No Render", "ToggleInfo", function(state)
-local function pause()
-	if cansetfpscap then
-		setfpscap(15)
-	end
-	ScreenGui.Enabled = true
-	RunService:Set3dRenderingEnabled(false)
-	if cangetconnections then
-		for _, x in pairs(Signals) do
-			for _, v in pairs(getconnections(x)) do
-				v:Disable()
-				table.insert(Connections, v)
-			end
-		end
-	end
-	paused = true
-end
+    game:GetService("RunService"):Set3dRenderingEnabled(false)
        else
-        local function resume()
-	if cansetfpscap then
-		setfpscap(0)
-	end
-	ScreenGui.Enabled = false
-	RunService:Set3dRenderingEnabled(true)
-	if cangetconnections then
-		for i, v in pairs(Connections) do
-			v:Enable()
-			Connections[i] = nil
-		end
-	end
-	paused = false
-end
+    game:GetService("RunService"):Set3dRenderingEnabled(true)   
     end)
 
     --notes
