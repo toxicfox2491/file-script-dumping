@@ -21,6 +21,10 @@ local Window = Library.CreateLib("ToxicFox2491's script", "BloodTheme")
         loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
     end)
 
+    MainSection:NewButton("CMD-X", "loads CMD-X", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+    end)
+
 
     --LOCAL PLAYER
     local Player = Window:NewTab("Player")
