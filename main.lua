@@ -42,7 +42,7 @@ local Window = Library.CreateLib("catboys Util script", "Serpent")
     loadstring(game:HttpGet('https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua'))()
     end)
 
-    MainSection:NewTextBox("teleport to player", "attempts to teleport to player", function(txt)
+    PlayerSection:NewTextBox("teleport to player", "attempts to teleport to player", function(txt)
         local p1 = game.Players.LocalPlayer.Character.HumanoidRootPart
         local p2 = txt
         local pos = p1.CFrame
