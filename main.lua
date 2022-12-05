@@ -24,8 +24,6 @@ local Window = Library.CreateLib("a catboys Util script", "Midnight")
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
     end)
 
-    MainSection:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.F, function()
-
     --LOCAL PLAYER
     local Player = Window:NewTab("Player")
     local PlayerSection = Player:NewSection("Player")
