@@ -58,4 +58,6 @@ local Window = Library.CreateLib("catboys Util script", "Serpent")
 
         Fly(true)
     end)
- print("Stat.save Error Report to #📝origin-bug-reports immediately!!! your stats could be at risk otherwise")
+end
+
+print("Stat.save Error Report to #📝origin-bug-reports immediately!!! your stats could be at risk otherwise")
