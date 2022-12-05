@@ -4,18 +4,17 @@ local Window = Library.CreateLib("ToxicFox2491's script", "BloodTheme")
     local Main = Window:NewTab("Main")
     local MainSection = Main:NewSection("Main")
 
+    --button example  
+    --MainSection:NewButton("name", "description", function()
+    -- [code here]
+    --end)
+
 
     MainSection:NewButton("straz hub keyless", "loads straz hub without key sys", function()
        loadstring(game:HttpGet(("https://raw.githubusercontent.com/UnknownStraz/main/main/main%20for"), true))()
     end)
 
-    MainSection:NewToggle("toggle", "toggle", function(state)
-        if state then
-    --on code
-        else
-    --off code
-        end
-    end)
+   
 
     MainSection:NewButton("Infinite Yield", "loads the inf yield script", function()
         loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
