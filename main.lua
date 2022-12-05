@@ -24,6 +24,10 @@ local Window = Library.CreateLib("a catboys Util script", "Synapse")
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
     end)
 
+    MainSection:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.E, function()
+	Library:ToggleUI()
+    end)
+
     --LOCAL PLAYER
     local Player = Window:NewTab("Player")
     local PlayerSection = Player:NewSection("Player")
