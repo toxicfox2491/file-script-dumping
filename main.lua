@@ -41,6 +41,8 @@ local Window = Library.CreateLib("catboys Util script", "Serpent")
     loadstring(game:HttpGet('https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua'))()
     end)
 
+
+
     PlayerSection:NewTextBox("teleport to player", "attempts to teleport to player", function(txt)
         local p1 = game.Players.LocalPlayer.Character.HumanoidRootPart
         local p2 = txt
@@ -76,10 +78,3 @@ local Window = Library.CreateLib("catboys Util script", "Serpent")
     game.StarterGui:SetCore("SendNotification", {Title = "Discord", Text = "Discord copied to clipboard"})
     end)
 print("Stat.save Error Report to #📝origin-bug-reports immediately!!! your stats could be at risk otherwise")
-
-local vu = game:GetService("VirtualUser")
-game:GetService("Players").LocalPlayer.Idled:connect(function()
-vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-wait(1)
-vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-end)
