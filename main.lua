@@ -77,10 +77,12 @@ local Window = Library.CreateLib("catboys Util script", "Serpent")
         Fly(true)
     end)
 
-    OtherSection:NewToggle("No Render", "ToggleInfo", function(state)
-    game:GetService("RunService"):Set3dRenderingEnabled(false)
-       else
-    game:GetService("RunService"):Set3dRenderingEnabled(true)   
+    OtherSection:NewToggle("No Render", "disables 3D render", function(state)
+    if state then
+        game:GetService("RunService"):Set3dRenderingEnabled(false)
+    else
+        game:GetService("RunService"):Set3dRenderingEnabled(true)
+      end
     end)
 
     --notes
