@@ -26,9 +26,8 @@ local Window = Library.CreateLib("catboys Util script", "Serpent")
 	Library:ToggleUI()
     end)
 
-    MainSection:NewLabel("Undetectable and safe")
+    MainSection:NewLabel("Undetectable, 100% safe + anti afk")
     MainSection:NewLabel("auto updates every week")
-    MainSection:NewLabel("anti afk")
     --LOCAL PLAYER
     local Player = Window:NewTab("Player")
     local PlayerSection = Player:NewSection("Player")
