@@ -64,14 +64,16 @@ local Window = Library.CreateLib("catboys Util script", "Serpent")
     end)
 
     OtherSection:NewButton("bypassed fly", "nicuse's fly script", function()
+       
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Nicuse/RobloxScripts/main/BypassedFly.lua"))() 
-
         Fly(true)
     end)
 
     local Notes = Window:NewTab("Notes")
-    local NotesSection = Other:NewSection("Notes")
-    NotesSection:NewLabel("Baller")
+    local NotesSection = Notes:NewSection("Notes")
 
+    NotesSection:NewButton("discord", "discord", function()
+    setclipboard("https://discord.gg/vtWvcXsymb")
+    game.StarterGui:SetCore("SendNotification", {Title = "Discord", Text = "Discord copied to clipboard"})
     end)
 print("Stat.save Error Report to #📝origin-bug-reports immediately!!! your stats could be at risk otherwise")
