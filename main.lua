@@ -11,17 +11,17 @@ local Window = Library.CreateLib("a catboys Util script", "Serpent")
 
 
     MainSection:NewButton("straz hub keyless", "loads straz hub without key sys", function()
-       loadstring(game:HttpGet(("https://raw.githubusercontent.com/UnknownStraz/main/main/main%20for"), true))()
+    loadstring(game:HttpGet(("https://raw.githubusercontent.com/UnknownStraz/main/main/main%20for"), true))()
     end)
 
    
 
     MainSection:NewButton("Infinite Yield", "loads the inf yield script", function()
-        loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
     end)
 
     MainSection:NewButton("CMD-X", "loads CMD-X", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
     end)
 
     MainSection:NewKeybind("Toggle UI", "UI toggle key", Enum.KeyCode.E, function()
@@ -41,7 +41,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/So
     end)
 
     PlayerSection:NewButton("ESP", "loads the unnamed ESP script", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua'))()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua'))()
     end)
 
 
@@ -50,11 +50,11 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP
     local OtherSection = Other:NewSection("Other")
 
     OtherSection:NewButton("AutoClicker", "Auto Clicker Script", function()
-loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/JustEzpi/ROBLOX-Scripts/main/ROBLOX_AutoClicker"))()
+    loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/JustEzpi/ROBLOX-Scripts/main/ROBLOX_AutoClicker"))()
     end)
 
     OtherSection:NewButton("bypassed fly", "nicuse's fly script", function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Nicuse/RobloxScripts/main/BypassedFly.lua"))() 
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Nicuse/RobloxScripts/main/BypassedFly.lua"))() 
 
         Fly(true)
     end)
