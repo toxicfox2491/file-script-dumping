@@ -1,9 +1,3 @@
-  local vu = game:GetService("VirtualUser")
-    game:GetService("Players").LocalPlayer.Idled:connect(function()
-    vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-    wait(1)
-    vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
-       end)
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("catboys Util script", "Serpent")
     -- MAIN
@@ -32,6 +26,13 @@ local Window = Library.CreateLib("catboys Util script", "Serpent")
     MainSection:NewLabel("when loading straz hub you have to drag this GUI somehwere else first")
     MainSection:NewLabel("Undetectable, 100% safe + anti afk")
     MainSection:NewLabel("auto updates every week")
+
+  local vu = game:GetService("VirtualUser")
+    game:GetService("Players").LocalPlayer.Idled:connect(function()
+    vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+    wait(1)
+    vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+       end)
 
     --LOCAL PLAYER
     local Player = Window:NewTab("Player")
