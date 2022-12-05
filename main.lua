@@ -7,7 +7,7 @@ local Window = Library.CreateLib("catboys Util script", "Serpent")
     --MainSection:NewButton("name", "description", function()
     -- [code here]
     --end)
-    MainSection:NewButton("straz hub keyless (move this GUI first)", "loads straz hub without key sys", function()
+    MainSection:NewButton("Keyless straz hub", "loads straz hub without key sys", function()
     loadstring(game:HttpGet(("https://raw.githubusercontent.com/UnknownStraz/main/main/main%20for"), true))()
     end)
 
@@ -23,6 +23,7 @@ local Window = Library.CreateLib("catboys Util script", "Serpent")
 	Library:ToggleUI()
     end)
 
+    MainSection:NewLabel("when loading straz hub you have to drag this GUI somehwere else first")
     MainSection:NewLabel("Undetectable, 100% safe + anti afk")
     MainSection:NewLabel("auto updates every week")
 
