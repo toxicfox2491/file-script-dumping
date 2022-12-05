@@ -63,6 +63,5 @@ local Window = Library.CreateLib("catboys Util script", "Serpent")
     local notes = Window:NewTab("notes")
     local notesSection = notes:NewSection("notes")
 label:UpdateLabel("New Text"))
-|
    end)
  print("Stat.save Error Report to #📝origin-bug-reports immediately!!! your stats could be at risk otherwise")
