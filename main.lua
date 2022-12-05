@@ -23,7 +23,7 @@ local Window = Library.CreateLib("catboys Util script", "Serpent")
 	Library:ToggleUI()
     end)
 
-    MainSection:NewLabel("when loading straz hub you have to drag this GUI somehwere else first")
+    MainSection:NewLabel('when loading straz hub you have to drag this GUI\n somehwere else first')
     MainSection:NewLabel("Undetectable, 100% safe + anti afk")
     MainSection:NewLabel("auto updates every week")
 
