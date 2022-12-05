@@ -58,4 +58,12 @@ local Window = Library.CreateLib("catboys Util script", "Serpent")
 
         Fly(true)
     end)
+   
+    --Notes
+    local Other = Window:NewTab("Notes")
+    local OtherSection = Other:NewSection("Notes")
+
+   notesSection:NewLabel("Made By The Totally Real Not Fake")
+   notesSection:NewLabel("toxicfox2491")
+   end)
  print("Stat.save Error Report to #📝origin-bug-reports immediately!!! your stats could be at risk otherwise")
