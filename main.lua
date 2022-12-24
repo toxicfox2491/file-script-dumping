@@ -80,8 +80,14 @@ local Window = Library.CreateLib("catboys Util script", "Serpent")
 
     OtherSection:NewToggle("No Render", "disables 3D render", function(state)
     if state then
+	if cansetfpscap then
+		setfpscap(15)
+	end
         game:GetService("RunService"):Set3dRenderingEnabled(false)
     else
+	if cansetfpscap then
+		setfpscap(60)
+	end
         game:GetService("RunService"):Set3dRenderingEnabled(true)
       end
     end)
