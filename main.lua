@@ -39,7 +39,7 @@ local Window = Library.CreateLib("SPTS:Origins utility script", "Serpent")
     loadstring(game:HttpGet('https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua'))()
     end)
 
-    ESPSection:NewLabel('ESP toggles are F4 and F3')
+    ESPSection:NewLabel('ESP toggles are F3 and F4')
 
     --Other
     local Other = Window:NewTab("Other")
@@ -64,6 +64,15 @@ local Window = Library.CreateLib("SPTS:Origins utility script", "Serpent")
 	end
         game:GetService("RunService"):Set3dRenderingEnabled(true)
       end
+    end)
+
+    OtherSection:NewButton("Night Time", "CHanges the ingame sky to night", function()
+          lighting = game:GetService("Lighting")
+   if lighting.TimeOfDay == "00:00:00" then
+       lighting.TimeOfDay = 11
+   else 
+       lighting.TimeOfDay = 24
+       end
     end)
 
     OtherSection:NewKeybind("quick reset", "quickly reset character", Enum.KeyCode.PageUp, function()
