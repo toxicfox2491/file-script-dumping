@@ -15,10 +15,6 @@ local Window = Library.CreateLib("SPTS:Origins utility script", "Serpent")
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
     end)
 
-    MainSection:NewButton("CMD-X", "loads CMD-X", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
-    end)
-
     MainSection:NewKeybind("Toggle UI", "UI toggle key", Enum.KeyCode.E, function()
 	Library:ToggleUI()
     end)
@@ -35,42 +31,20 @@ local Window = Library.CreateLib("SPTS:Origins utility script", "Serpent")
     vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
        end)
 
-    --Player Section
-    local Player = Window:NewTab("Player")
-    local PlayerSection = Player:NewSection("Player")
+    --ESP Section
+    local ESP = Window:NewTab("ESP")
+    local ESPSection = ESP:NewSection("ESP")
 
-    PlayerSection:NewSlider("Walk Speed", "set walk speed", 1000, 16, function(s)
-        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
-    end)
-
-    PlayerSection:NewSlider("Jump Power", "set jump power", 1000, 50, function(s)
-        game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
-    end)
-
-    PlayerSection:NewButton("ESP", "loads the unnamed ESP script", function()
+    ESPSection:NewButton("ESP", "loads the unnamed ESP script", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua'))()
     end)
 
-    PlayerSection:NewTextBox("teleport to player", "attempts to teleport to player", function(txt)
-        local p1 = game.Players.LocalPlayer.Character.HumanoidRootPart
-        local p2 = txt
-        local pos = p1.CFrame
-       
-        p1.CFrame = game.Players[p2].Character.HumanoidRootPart.CFrame
-       
-        wait(5)
-       
-        p1.CFrame = pos
-        
-    end)       
+ MainSection:NewLabel('ESP toggles are F4 and F3')
 
     --Other
     local Other = Window:NewTab("Other")
     local OtherSection = Other:NewSection("Other")
 
-    OtherSection:NewButton("AutoClicker", "Auto Clicker Script", function()
-    loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/JustEzpi/ROBLOX-Scripts/main/ROBLOX_AutoClicker"))()
-    end)
 
     OtherSection:NewButton("bypassed fly", "nicuse's fly script", function()
        
