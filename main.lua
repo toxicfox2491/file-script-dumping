@@ -66,13 +66,21 @@ local Window = Library.CreateLib("SPTS:Origins utility script", "Serpent")
       end
     end)
 
-    OtherSection:NewButton("Night Time", "CHanges the ingame sky to night", function()
-          lighting = game:GetService("Lighting")
-   if lighting.TimeOfDay == "00:00:00" then
-       lighting.TimeOfDay = 11
-   else 
-       lighting.TimeOfDay = 24
-       end
+    OtherSection:NewToggle("Night Time", "CHanges the ingame sky to night", function(state)
+    if state then
+               lighting = game:GetService("Lighting")
+               if lighting.TimeOfDay == "00:00:00" then
+               lighting.TimeOfDay = 11
+               else 
+               lighting.TimeOfDay = 24
+               end
+          else
+               lighting = game:GetService("Lighting")
+               if lighting.TimeOfDay == "00:00:00" then
+               lighting.TimeOfDay = 11
+               else 
+               lighting.TimeOfDay = 24
+               end
     end)
 
     OtherSection:NewKeybind("quick reset", "quickly reset character", Enum.KeyCode.PageUp, function()
