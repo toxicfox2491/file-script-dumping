@@ -39,7 +39,7 @@ local Window = Library.CreateLib("SPTS:Origins utility script", "Serpent")
     loadstring(game:HttpGet('https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua'))()
     end)
 
- MainSection:NewLabel('ESP toggles are F4 and F3')
+    ESPSection:NewLabel('ESP toggles are F4 and F3')
 
     --Other
     local Other = Window:NewTab("Other")
