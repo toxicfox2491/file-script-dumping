@@ -66,6 +66,9 @@ local Window = Library.CreateLib("SPTS:Origins utility script", "Serpent")
       end
     end)
 
+    OtherSection:NewKeybind("quick reset", "quickly reset character", Enum.KeyCode.PageUp, function()
+    game.Players.LocalPlayer.Character.Head:Destroy()
+    end)
     --notes
     local Notes = Window:NewTab("Notes")
     local NotesSection = Notes:NewSection("Notes")
