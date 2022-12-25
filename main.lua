@@ -1,5 +1,5 @@
-    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-    local Window = Library.CreateLib("SPTS:Origins utility script", "Serpent")
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("SPTS:Origins utility script", "Serpent")
     -- MAIN
     local Main = Window:NewTab("Main")
     local MainSection = Main:NewSection("Main")
@@ -15,7 +15,7 @@
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
     end)
 
-    MainSection:NewKeybind("Toggle UI", "UI toggle key", Enum.KeyCode.E, function()
+    MainSection:NewKeybind("Toggle UI", "UI toggle key", Enum.KeyCode.RightBracket, function()
 	Library:ToggleUI()
     end)
 
