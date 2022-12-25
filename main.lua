@@ -1,5 +1,5 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("SPTS:Origins utility script", "Serpent")
+    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+    local Window = Library.CreateLib("SPTS:Origins utility script", "Serpent")
     -- MAIN
     local Main = Window:NewTab("Main")
     local MainSection = Main:NewSection("Main")
@@ -66,7 +66,7 @@ local Window = Library.CreateLib("SPTS:Origins utility script", "Serpent")
       end
     end)
 
-    OtherSection:NewButton("Night Time", "turns the ingame sky to night", function(state)
+    OtherSection:NewButton("Night Time", "turns the ingame sky to night", function()
         if state then
         lighting = game:GetService("Lighting")
         if lighting.TimeOfDay == "00:00:00" then
