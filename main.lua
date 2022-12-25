@@ -67,13 +67,13 @@
     end)
 
    OtherSection:NewButton("Night Time", "turns the ingame sky to night", function()
-          lighting = game:GetService("Lighting")
-   if lighting.TimeOfDay == "00:00:00" then
-       lighting.TimeOfDay = 11
-   else 
-       lighting.TimeOfDay = 24
-   end
-    end
+            lighting = game:GetService("Lighting")
+            if lighting.TimeOfDay == "00:00:00" then
+            lighting.TimeOfDay = 11
+            else 
+            lighting.TimeOfDay = 24
+            end
+    end)
 
     OtherSection:NewKeybind("quick reset", "quickly reset character", Enum.KeyCode.PageUp, function()
     game.Players.LocalPlayer.Character.Head:Destroy()
