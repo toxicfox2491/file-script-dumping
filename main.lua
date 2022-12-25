@@ -67,7 +67,6 @@
     end)
 
     OtherSection:NewButton("Night Time", "turns the ingame sky to night", function()
-        if state then
         lighting = game:GetService("Lighting")
         if lighting.TimeOfDay == "00:00:00" then
         lighting.TimeOfDay = 11
