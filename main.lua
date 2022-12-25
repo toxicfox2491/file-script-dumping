@@ -72,6 +72,7 @@
         lighting.TimeOfDay = 11
         else
        lighting.TimeOfDay = 24
+            end
         end)
 
     OtherSection:NewKeybind("quick reset", "quickly reset character", Enum.KeyCode.PageUp, function()
